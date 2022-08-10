@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="icon" type="image/png" href="images/assets/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="images/assets/favicon-32x32.png" sizes="32x32" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet" />
+  </head>
+  <body id="home">
+    <div class="container-fluid" id="big-bg-cloud">
+      <div class="container">
+        <div class=row>
+          <div class="col-12 col-md sidebar-wrapper-open">
+            <!--sidebar start-->
+            <div class="sidebar sticky-top">
+              <div class="logo show">
+                <a href="index.html"><img src="images/assets/logo.svg" alt="" class="show"></a>
+              </div>
+              <div class="btnmenu">
+                  <span class="bar1"></span>
+                  <span class="bar2"></span>
+                  <span class="bar3"></span>
+              </div>
+              <ul style="margin-top: 65px;">
+                <li><a href="#"><i><img src="images/assets/menu-icon-1.svg"></i> <span class="show">Home</span></a></li>
+                <li><a href="#"><i><img src="images/assets/menu-icon-2.svg"></i> <span class="show">Wallet </span></a></li>
+                <li><a href="#"><i><img src="images/assets/menu-icon-3.svg"></i><span class="show">Booking</span></a></li>
+                <li><a href="#"><i><img src="images/assets/menu-icon-4.svg"></i><span class="show">Business</span></a></li>
+                <li><a href="#"><i><img src="images/assets/menu-icon-5.svg"></i><span class="show">Explore</span></a></li>
+                <li><a href="#"><i><img src="images/assets/menu-icon-6.svg"></i><span class="show">Support</span></a></li>
+              </ul>
+            </div>
+            <!--sidebar end-->
+          </div>
+          <div class="col-12 col-md content-wrapper">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="content-wrapper-margin">
+                  <div class="">
+
+
+                    <div class="row">
+                      <div class="col-md-6 order-2 flight">
+                        <ul class="profile-settings home-profile-settings">
+                          <li><span class="icon"><img src="images/assets/partner-icon.svg" alt="" class=""></span><a href="#">Become a Partner</a> </li>
+                          <li><span><img src="images/assets/profile.png" alt="" class="img-fluid"></span><a href="#">Mansurul Haque</a></li>
+                        </ul>
+                      </div>
+
+
+                      <div class="col-6 order-1">
+
+                        <section id="search-category" class="home-search-category">
+                          <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                            <li class="nav-item" >
+                              <button class="nav-link text-uppercase" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-flights" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                                <span class="icon"><img src="images/assets/plane-icon.svg" alt=""></span>Flights
+                              </button>
+                            </li>
+                            <li class="nav-item">
+                              <button class="nav-link active text-uppercase" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-hotel" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                                <span class="icon"><img src="images/assets/hotel-icon.svg" alt=""></span>Hotel
+                              </button>
+                            </li>
+                            <li class="nav-item">
+                              <button class="nav-link text-uppercase" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-villa" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
+                                <span class="icon"><img src="images/assets/villa-icon.svg" alt=""></span>Villa
+                              </button>
+                            </li>
+                            <li class="nav-item">
+                              <button class="nav-link text-uppercase" id="pills-taxi-tab" data-bs-toggle="pill" data-bs-target="#pills-taxi" type="button" role="tab" aria-controls="pills-taxi" aria-selected="false">
+                                <span class="icon"><img src="images/assets/taxi-icon.svg" alt=""></span>Taxi
+                              </button>
+                            </li>
+                          </ul>
+                        </section>
+
+                      </div>
+
+
+                    </div>
+
+
+                    
+                    <section id="h-search" class="mb-5">
+                      <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-flights" role="tabpanel" aria-labelledby="pills-flights-tab">
+                          <!--flights search-->
+                          <form id="search" name="search" action="search-result.html" method="get">
+                            <div class="row">
+                              <div class="col-md-4">
+                                <div class="custom-input-type">
+                                  <div class="row title">From</div>
+                                  <div class="row">
+                                    <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Dhaka, Bangladesh">
+                                  </div>
+                                  <div class="row excerpt">Usmani airport, Sylhet</div>
+                                </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="custom-input-type">
+                                  <div class="row title">To</div>
+                                  <div class="row">
+                                    <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Trivandrum, India">
+                                  </div>
+                                  <div class="row excerpt">Trivandrum International Airport</div>
+                                </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="custom-input-type">
+                                  <div class="row title">Date</div>
+                                  <div class="row">
+                                    <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Sep 1 2022">
+                                  </div>
+                                  <div class="row excerpt"> &nbsp; </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row d-flex justify-content-between align-items-center">
+                              <div class="col-md-2">
+                                <div class="custom-input-type">
+                                  <div class="row title">More Option</div>
+                                  <div class="row">
+                                    <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="More">
+                                  </div>
+                                  <div class="row excerpt">...</div>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                  <label class="form-check-label" for="flexCheckDefault">Direct flights only</label>
+                                </div>
+                              </div>
+                              <div class="col-md-4 text-end"><button class="btn btn-secondary text-uppercase btn-lg hero-button">Search Flight</button></div>
+                            </div>
+                          </form>
+                          <!--end flights search-->
+                        </div>
+                        <div class="tab-pane fade" id="pills-hotel" role="tabpanel" aria-labelledby="pills-hotel-tab">
+                          <!--hotels search-->
+                          <form id="search" name="search" action="search-result.html" method="get">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <div class="custom-input-type">
+                                  <div class="row title">Location</div>
+                                  <div class="row">
+                                    <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Dhaka, Bangladesh">
+                                  </div>
+                                  <div class="row excerpt">Usmani airport, Sylhet</div>
+                                </div>
+                              </div>
+                              <div class="col-md-3">
+                                <div class="custom-input-type">
+                                  <div class="row title">Check In</div>
+                                  <div class="row">
+                                    <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="21 Aug 2022">
+                                  </div>
+                                  <div class="row excerpt">Sunday</div>
+                                </div>
+                              </div>
+                              <div class="col-md-3">
+                                <div class="custom-input-type">
+                                  <div class="row title">Check Out</div>
+                                  <div class="row">
+                                    <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="21 Aug 2022">
+                                  </div>
+                                  <div class="row excerpt">Sunday</div>
+                                </div>
+                              </div>
+                              <div class="col-md-3">
+                                <div class="custom-input-type">
+                                  <div class="row title">Guests</div>
+                                  <div class="row">
+                                    <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="3 adult - 1 children - 2 room">
+                                  </div>
+                                  <div class="row excerpt">Person</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row d-flex justify-content-between align-items-center">
+                              <div class="col-md-2">
+                                <div class="custom-input-type">
+                                  <div class="row title">More Option</div>
+                                  <div class="row">
+                                    <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="More">
+                                  </div>
+                                  <div class="row excerpt">...</div>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                  <label class="form-check-label" for="flexCheckDefault">I am travelling for work</label>
+                                </div>
+                              </div>
+                              <div class="col-md-4 text-end"><button class="btn btn-secondary text-uppercase btn-lg hero-button">Search Hotel</button></div>
+                            </div>
+                          </form>
+                          <!--end hotels search-->
+                        </div>
+                        <div class="tab-pane fade" id="pills-villa" role="tabpanel" aria-labelledby="pills-villa-tab">
+                          <!--villa search-->
+                          <form id="search" name="search" action="search-result.html" method="get">
+                            <div class="row">
+                              <div class="col-md-5">
+                                <div class="custom-input-type">
+                                  <div class="row title">Location</div>
+                                  <div class="row">
+                                    <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Dhaka, Bangladesh">
+                                  </div>
+                                  <div class="row excerpt">Usmani airport, Sylhet</div>
+                                </div>
+                              </div>
+                              <div class="col-md-3">
+                                <div class="custom-input-type">
+                                  <div class="row title">Check In-Out</div>
+                                  <div class="row">
+                                    <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="21 Aug 2022">
+                                  </div>
+                                  <div class="row excerpt">Sunday</div>
+                                </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="custom-input-type">
+                                  <div class="row title">Guests</div>
+                                  <div class="row">
+                                    <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="3 adult - 1 children - 2 room">
+                                  </div>
+                                  <div class="row excerpt">Person</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row d-flex justify-content-between align-items-center">
+                              <div class="col-md-2">
+                                <div class="custom-input-type">
+                                  <div class="row title">More Option</div>
+                                  <div class="row">
+                                    <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="More">
+                                  </div>
+                                  <div class="row excerpt">...</div>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                  <label class="form-check-label" for="flexCheckDefault">I am travelling for work</label>
+                                </div>
+                              </div>
+                              <div class="col-md-4 text-end"><button class="btn btn-secondary text-uppercase btn-lg hero-button">Search Villa</button></div>
+                            </div>
+                          </form>
+                          <!--end villa search-->
+                        </div>
+                        <div class="tab-pane fade" id="pills-taxi" role="tabpanel" aria-labelledby="pills-contact-tab">
+                          <!--taxi search-->
+                          <form id="search" name="search" action="search-result.html" method="get">
+                            <div class="row">
+                              <div class="col-md-5">
+                                <div class="custom-input-type">
+                                  <div class="row title">Location</div>
+                                  <div class="row">
+                                    <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Dhaka, Bangladesh">
+                                  </div>
+                                  <div class="row excerpt">Usmani airport, Sylhet</div>
+                                </div>
+                              </div>
+                              <div class="col-md-3">
+                                <div class="custom-input-type">
+                                  <div class="row title">Departure</div>
+                                  <div class="row">
+                                    <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="21 Aug 2022">
+                                  </div>
+                                  <div class="row excerpt">Sunday</div>
+                                </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="custom-input-type">
+                                  <div class="row title">Pickup Time</div>
+                                  <div class="row">
+                                    <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="3.00 PM">
+                                  </div>
+                                  <div class="row excerpt"> &nbsp; </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row d-flex justify-content-between align-items-center">
+                              <div class="col-md-2">
+                                <div class="custom-input-type">
+                                  <div class="row title">More Option</div>
+                                  <div class="row">
+                                    <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="More">
+                                  </div>
+                                  <div class="row excerpt">...</div>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                  <label class="form-check-label" for="flexCheckDefault">Hourly Rentals</label>
+                                </div>
+                              </div>
+                              <div class="col-md-4 text-end"><button class="btn btn-secondary text-uppercase btn-lg hero-button">Search Taxi</button></div>
+                            </div>
+                          </form>
+                          <!--end taxi search-->
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                  <!--trip package-->
+                  <section id="h-trip-package" class="mb-5">
+                    <div class="section-title">
+                      <div class="row">
+                        <div class="col-6">
+                          <h2 class="align-text-bottom">Trip Package</h2>
+                        </div>
+                        <div class="col-6 text-end align-text-bottom" >
+                          <a href="#" class="view-all align-text-bottom">View all</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6 col-lg-4">
+                        <div class="text-over">
+                          <a href="">
+                            <img src="images/package/thailand.jpg" class="img-fluid bg-image" alt="" />
+                            <div class="text-overlay-top">
+                              <p class="start-from">Start From</p>
+                              <p class="price">$599</p>
+                            </div>
+                            <div class="text-overlay-bottom">
+                              <p class="location">Thailand</p>
+                              <p class="package">Holidays</p>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-lg-4">
+                        <div class="text-over">
+                          <a href="">
+                            <img src="images/package/greece.jpg" class="img-fluid bg-image" alt="" />
+                            <div class="text-overlay-top">
+                              <p class="start-from">Start From</p>
+                              <p class="price">$599</p>
+                            </div>
+                            <div class="text-overlay-bottom">
+                              <p class="location">Greece</p>
+                              <p class="package">Holidays</p>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-lg-4">
+                        <div class="text-over">
+                          <a href="">
+                            <img src="images/package/nepal.jpg" class="img-fluid bg-image" alt="" />
+                            <div class="text-overlay-top">
+                              <p class="start-from">Start From</p>
+                              <p class="price">$599</p>
+                            </div>
+                            <div class="text-overlay-bottom">
+                              <p class="location">Nepal</p>
+                              <p class="package">Holidays</p>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <!--best offer-->
+                  <section id="h-best-offer" class="mb-5">
+                    <div class="section-title">
+                      <div class="row">
+                        <div class="col ">
+                          <h2 class="align-text-bottom">Best Offer</h2>
+                        </div>
+                        <div class="col text-end align-text-bottom" >
+                          <a href="#" class="view-all align-text-bottom">View all</a> 
+                        </div>
+                      </div>
+                    </div>
+                    <ul class="row ">
+                      <li class="col-md-4 book-now-col">
+                        <div class="border">
+                          <a href="#">
+                            <div class="d-flex justify-content-start">
+                              <div class="offer-aside">
+                                <img src="images/locations/1.png" alt="" />
+                              </div>
+                              <div class="offer-body">
+                                <p class="title">Alexandria</p>
+                                <p class="description">Best Hotel, villa</p>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </li>
+                      <li class="col-md-4 book-now-col">
+                        <div class="border">
+                          <a href="#">
+                            <div class="d-flex justify-content-start">
+                              <div class="offer-aside">
+                                <img src="images/locations/2.png" alt="" />
+                              </div>
+                              <div class="offer-body">
+                                <p class="title">Astana</p>
+                                <p class="description">Best Hotel, villa</p>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </li>
+                      <li class="col-md-4 book-now-col">
+                        <div class="border">
+                          <a href="#">
+                            <div class="d-flex justify-content-start">
+                              <div class="offer-aside">
+                                <img src="images/locations/3.png" alt="" />
+                              </div>
+                              <div class="offer-body">
+                                <p class="title">Calgary</p>
+                                <p class="description">Best Hotel, villa</p>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </li>
+                      <li class="col-md-4 book-now-col">
+                        <div class="border">
+                          <a href="#">
+                            <div class="d-flex justify-content-start">
+                              <div class="offer-aside">
+                                <img src="images/locations/4.png" alt="" />
+                              </div>
+                              <div class="offer-body">
+                                <p class="title">Fairbanks</p>
+                                <p class="description">Best Hotel, villa</p>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </li>
+                      <li class="col-md-4 book-now-col">
+                        <div class="border">
+                          <a href="#">
+                            <div class="d-flex justify-content-start">
+                              <div class="offer-aside">
+                                <img src="images/locations/5.png" alt="" />
+                              </div>
+                              <div class="offer-body">
+                                <p class="title">Jackson</p>
+                                <p class="description">Best Hotel, villa</p>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </li>
+                      <li class="col-md-4 book-now-col">
+                        <div class="border">
+                          <a href="#">
+                            <div class="d-flex justify-content-start">
+                              <div class="offer-aside">
+                                <img src="images/locations/6.png" alt="" />
+                              </div>
+                              <div class="offer-body">
+                                <p class="title">Madison</p>
+                                <p class="description">Best Hotel, villa</p>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </li>
+                      <li class="col-md-4 book-now-col">
+                        <div class="border">
+                          <a href="#">
+                            <div class="d-flex justify-content-start">
+                              <div class="offer-aside">
+                                <img src="images/locations/7.png" alt="" />
+                              </div>
+                              <div class="offer-body">
+                                <p class="title">Monterrey</p>
+                                <p class="description">Best Hotel, villa</p>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </li>
+                      <li class="col-md-4 book-now-col">
+                        <div class="border">
+                          <a href="#">
+                            <div class="d-flex justify-content-start">
+                              <div class="offer-aside">
+                                <img src="images/locations/8.png" alt="" />
+                              </div>
+                              <div class="offer-body">
+                                <p class="title">Palo Alto</p>
+                                <p class="description">Best Hotel, villa</p>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </li>
+                      <li class="col-md-4 book-now-col">
+                        <div class="border">
+                          <a href="#">
+                            <div class="d-flex justify-content-start">
+                              <div class="offer-aside">
+                                <img src="images/locations/9.png" alt="" />
+                              </div>
+                              <div class="offer-body">
+                                <p class="title">Seville</p>
+                                <p class="description">Best Hotel, villa</p>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </li>
+                    </ul>
+                  </section>
+                  <!--book now-->
+                  <section id="book-now"  class="mb-5">
+                    <div class="row d-flex justify-content-between">
+                      <div class="col-12 col-md book-now-col">
+                        <p class="title">Book Your Perfect Deals</p>
+                        <p class="price">$547 <span>Starting at</span></p>
+                      </div>
+                      <div class="col-12 col-md d-flex align-items-md-end justify-content-md-end">
+                        <a href="#" class="btn btn-light text-uppercase book-now-btn">Book Now</a>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+      $('.btnmenu').on("click", function(){
+      $('.btnmenu').toggleClass('close-btn');
+      $('.sidebar').toggleClass('sidebar-open');
+      $('.sidebar-wrapper-open').toggleClass('sidebar-wrapper');
+      $('.show').toggleClass('hide');
+      });
+    </script>
+  </body>
+</html>
