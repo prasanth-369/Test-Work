@@ -5,7 +5,7 @@ BOOTSTRAP 5, SCSS, JQUERY
 
 ## Bootsrap
 
-Need bootsrap source files locally installed for theme cuztomiztion
+Need bootsrap 5.2.0 source files locally installed for theme cuztomiztion
 
 ## Additional Plugin 
 
